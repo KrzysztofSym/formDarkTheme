@@ -12,6 +12,7 @@
     <div class="container">
         <div class="column1">
             <div class="card">
+                <i class="fa-solid fa-xmark"></i>
                 <p>Hi!<br><br>One of our consultants will assist you as soon as they can!</p> 
                 <div class="name">
                     <label id="name_label">Name</label>
@@ -19,35 +20,37 @@
                 </div>
                 <div class="user mail">
                     <label id="email_label">Email</label>
-                    <input type="email" id="email_field" placeholder="Enter your email address" name="mail">
-                    <span id="email_error">error msg</span>
+                    <input type="email" id="email_field" name="mail">
                 </div>
                 <div class="user pass">
                     <label>Password</label>
-                    <input type="text" placeholder="Enter your password" name="pass">
+                    <input type="password" name="pass">
                 </div>
                 <div class="phone">
                     <label id="phone_number">Phone number (optional)</label>
                     <input type="number" name="phone">
                 </div>
                 <div class="message">
-                    <label id="message">Message</label>
-                    <input type="message" name="message">
+                    <label for="message">Message</label>
+                    <textarea id="text" name="message" rows="3" cols="50"></textarea>
                 </div>
                 <div class="btn">Start chat</div>
             </div>
         </div>
         <div class="column2">
             <div class="card">
-                <i>logo</i>
-                <h4>Show others that you are safe</h4>
-                <p>If you approve your profile with BankID, you are perceived as a safer person to trade with.</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shield-check-filled" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M11.998 2l.118 .007l.059 .008l.061 .013l.111 .034a.993 .993 0 0 1 .217 .112l.104 .082l.255 .218a11 11 0 0 0 7.189 2.537l.342 -.01a1 1 0 0 1 1.005 .717a13 13 0 0 1 -9.208 16.25a1 1 0 0 1 -.502 0a13 13 0 0 1 -9.209 -16.25a1 1 0 0 1 1.005 -.717a11 11 0 0 0 7.531 -2.527l.263 -.225l.096 -.075a.993 .993 0 0 1 .217 -.112l.112 -.034a.97 .97 0 0 1 .119 -.021l.115 -.007zm3.71 7.293a1 1 0 0 0 -1.415 0l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.32 1.497l2 2l.094 .083a1 1 0 0 0 1.32 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z" stroke-width="0" fill="currentColor" /></svg>
+                <div class="info">
+                    <h4>Show others that you are safe</h4>
+                    <p>If you approve your profile with BankID, you are perceived as a safer person to trade with.</p>
+                    <div class="btn">Get started</div>
+                </div>
             </div>
             <div class="card">
-                <i>envelope</i>
+                <i class="fa-regular fa-envelope-open"></i>
                 <h3>Subscribe to the newsletter</h3>
                 <div class="email">
-                    <label id="email_label">Email</label>
+                    <!-- <label id="email_label">Email</label> -->
                     <input type="email" placeholder="Enter email address">
                     <div class="btn">Ok</div>
                 </div>
